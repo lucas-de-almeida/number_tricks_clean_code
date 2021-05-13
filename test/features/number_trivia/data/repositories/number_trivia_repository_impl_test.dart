@@ -1,14 +1,15 @@
 import 'package:dartz/dartz.dart';
 import 'package:mockito/mockito.dart';
 import 'package:flutter_test/flutter_test.dart';
-import '../../../../lib/core/error/exception.dart';
-import '../../../../lib/core/error/failures.dart';
-import '../../../../lib/core/network/network_info.dart';
-import '../../../../lib/features/number_trivia/data/datasources/number_trivia_local_data_source.dart';
-import '../../../../lib/features/number_trivia/data/datasources/number_trivia_remote_data_source.dart';
-import '../../../../lib/features/number_trivia/data/models/number_trivia_model.dart';
-import '../../../../lib/features/number_trivia/data/repositories/number_trivia_repository_impl.dart';
-import '../../../../lib/features/number_trivia/domain/entities/number_trivia.dart';
+import 'package:trivial_number/core/error/failures.dart';
+import 'package:trivial_number/core/network/network_info.dart';
+import 'package:trivial_number/features/number_trivia/data/datasources/number_trivia_local_data_source.dart';
+import 'package:trivial_number/features/number_trivia/data/datasources/number_trivia_remote_data_source.dart';
+import 'package:trivial_number/features/number_trivia/data/models/number_trivia_model.dart';
+import 'package:trivial_number/features/number_trivia/data/repositories/number_trivia_repository_impl.dart';
+import 'package:trivial_number/features/number_trivia/domain/entities/number_trivia.dart';
+
+import '../../../../core/error/exceptions.dart';
 
 class MockRemoteDataSource extends Mock
     implements NumberTriviaRemoteDataSource {}
