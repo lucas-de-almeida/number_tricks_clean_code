@@ -49,6 +49,7 @@ void main() {
         // act
         final call = dataSource.getLastNumberTrivia;
         // assert
+        // ignore: deprecated_member_use
         expect(() => call(), throwsA(TypeMatcher<CacheException>()));
       },
     );
