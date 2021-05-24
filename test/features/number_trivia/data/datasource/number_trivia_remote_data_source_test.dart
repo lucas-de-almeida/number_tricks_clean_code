@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 import '../../../../../lib/core/error/exception.dart';
 import '../../../../../lib/features/number_trivia/data/datasources/number_trivia_remote_data_source.dart';
 import '../../../../../lib/features/number_trivia/data/models/number_trivia_model.dart';
-import '../../../../fixtures/ficture_reader.dart';
+import '../../../../fixtures/fixture_reader.dart';
 
 class MockHttpClient extends Mock implements http.Client {}
 
