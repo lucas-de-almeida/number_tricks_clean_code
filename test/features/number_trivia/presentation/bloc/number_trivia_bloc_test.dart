@@ -4,6 +4,7 @@ import 'package:trivial_number/core/util/input_converter.dart';
 import 'package:trivial_number/features/number_trivia/domain/usecases/get_concrete_number_trivia.dart';
 import 'package:trivial_number/features/number_trivia/domain/usecases/get_random_number_trivia.dart';
 import 'package:trivial_number/features/number_trivia/presentation/bloc/number_trivia_bloc.dart';
+import 'package:trivial_number/features/number_trivia/presentation/bloc/number_trivia_state.dart';
 
 class MockGetConcreteNumberTrivia extends Mock
     implements GetConcreteNumberTrivia {}
@@ -28,5 +29,10 @@ void main() {
       random: mockGetRandomNumberTrivia,
       inputConverter: mockInputConverter,
     );
+  });
+
+  test('initialState should be Empty', () {
+    // assert
+    expect(bloc.initialState, equals(Empty()));
   });
 }
