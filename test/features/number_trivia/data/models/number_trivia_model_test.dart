@@ -22,6 +22,7 @@ void main() {
       'should return a valid model when the JSON number is an integer',
       () async {
         // arrange
+
         final Map<String, dynamic> jsonMap =
             json.decode(fixture('trivia.json'));
         // act
